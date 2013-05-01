@@ -1,0 +1,7 @@
+CACHE MANIFEST
+#Manifest for spelling corrector app
+#Created 16:48 01/05/2013
+
+scripts.js
+styles.css
+index.html

@@ -1,0 +1,159 @@
+/* Part of the Spelling Corrector app.
+ * Licensed under the MIT license, see COPYING.txt for details
+ */
+
+/* Main body */
+html {
+	height:100%;
+}
+
+body {
+	max-height:100%;
+}
+
+/* Word is correct */
+body.yes {
+	/* Gradient background */
+	background: #99ff99;
+	background: -moz-linear-gradient(top, #009900 0%, #99ff99 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#009900), color-stop(100%,#99ff99));
+	background: -webkit-linear-gradient(top, #009900 0%,#99ff99 100%);
+	background: -o-linear-gradient(top, #009900 0%,#99ff99 100%);
+	background: -ms-linear-gradient(top, #009900 0%,#99ff99 100%);
+	background: linear-gradient(to bottom, #009900 0%,#99ff99 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009900', endColorstr='#99ff99',GradientType=0 );
+	background-repeat:repeat-x;
+	
+	/* Transition effect */
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    
+	color:#005500;
+}
+
+/* Word is wrong */
+body.no {
+	/* Gradient background */
+	background: #ff9999;
+	background: -moz-linear-gradient(top, #990000 0%, #ff9999 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#990000), color-stop(100%,#ff9999));
+	background: -webkit-linear-gradient(top, #990000 0%,#ff9999 100%);
+	background: -o-linear-gradient(top, #990000 0%,#ff9999 100%);
+	background: -ms-linear-gradient(top, #990000 0%,#ff9999 100%);
+	background: linear-gradient(to bottom, #990000 0%,#ff9999 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#990000', endColorstr='#ff9999',GradientType=0 );
+	background-repeat:repeat-x;
+	
+	/* Transition effect */
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    
+	color:#550000;
+}
+
+/* The two main "blocky things" */
+.block {
+	border-radius:10px;
+	background-color:rgba(240, 240, 240, 0.7);
+	margin-top:2%;
+	margin-bottom:2%;
+	margin-left:auto;
+	margin-right:auto;
+	width:60%;
+	padding:10px;
+}
+
+/* Nothing to see here */
+.advert {
+	text-align:center;
+}
+
+/* The bottom content block thing */
+.main {
+	text-align:center;
+}
+
+/* The settings table */
+#settingsTable {
+	width:100%;
+	table-layout: fixed;
+}
+
+/* The delete button */
+.deleteButton {
+	width:16px;
+	height:16px;
+	font-size:12px;
+	vertical-align:middle;
+	text-align:center;
+	background-color:#ee7777;
+	border-radius:3px;
+	float:left;
+	cursor:pointer;
+	font-family: sans-serif;
+}
+
+/* And the add button */
+.addButton {
+	width:23px;
+	height:23px;
+	font-size:20px;
+	vertical-align:middle;
+	text-align:center;
+	background-color:#77ee77;
+	border-radius:3px;
+	float:left;
+	cursor:pointer;
+	font-family: sans-serif;
+}
+
+/** And the words in the settings area */
+.settingsWord {
+	float:left;
+	margin-left:3px;
+}
+
+/* Input styles */
+input {
+	border-radius:3px;
+	background-color:transparent;
+}
+
+input.yes {
+	border:1px solid #009900;
+	color:#005500;
+}
+
+input.no {
+	border:1px solid #990000;
+	color:#550000;
+}
+
+/* Main word entry field */
+#wordEntry {
+	font-size:16px;
+	padding:7px;
+}
+
+/* Word origin text */
+#wordOrigin {
+	font-size:20px;
+	font-weight:bold;
+}
+
+/* And the add new word text */
+#addWordField {
+	border:1px solid #009900;
+	color:#005500;
+}
+
+/* Links should have pointy hands */
+a {
+	cursor:pointer;
+}

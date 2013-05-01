@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html manifest='manifest.mf'>
+	<!-- Part of the Spelling Corrector app - Licensed under the MIT license, see COPYING.txt for details -->
+	<head>
+		<title>Spelling Corrector</title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="scripts.js"></script>
+	<head>
+	
+	<body class='yes' onload='sc.generateNextWord();'>
+		<!-- Settings area -->
+		<div class='block settings'>
+			<div id='settingsClicker'>
+				<a onclick='sc.toggleSettingsDiv();'>&#9998; Settings</a>
+			</div>
+			
+			<div id='mainSettings' style='display:none'>
+				<table id='settingsTable'>
+					<!-- This table is generated through code -->
+				</table>
+			</div>
+		</div>
+		
+		<!-- Main word entry -->
+		<div class='block main'>
+			<!-- Entry field -->
+			<div id='wordEntryContainer'>
+				<input id='wordEntry' type='text' class='yes' 
+					spellcheck='false' onkeydown='setTimeout(sc.checkWord, 10);'
+				/>
+			</div>
+			
+			<div id='Description'>
+				Type the word from below into the box above.
+			</div>
+			
+			<!-- "This is the word you have to type" field -->
+			<div id='wordOrigin'>
+				
+			</div>
+		</div>
+	</body>
+</html>
