@@ -7,7 +7,7 @@ While I intended this to be used for spelling mistakes, it probably could be use
 over and over. Who knows?
 
 It can run on your local computer (with no installation, just load index.html in your web browser), or a web server.
-An online version is at [http://sc.app.savagewolf.org/] if you are so inclined.
+An online version is at http://sc.savagewolf.org/ if you are so inclined.
 
 Why is this open source? Why not!
 
