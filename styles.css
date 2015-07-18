@@ -89,8 +89,9 @@ body.no {
 .deleteButton {
 	width:16px;
 	height:16px;
+	color: #552222;
+	line-height:16px;
 	font-size:12px;
-	vertical-align:middle;
 	text-align:center;
 	background-color:#ee7777;
 	border-radius:3px;
@@ -103,10 +104,12 @@ body.no {
 .addButton {
 	width:23px;
 	height:23px;
+	line-height:23px;
 	font-size:20px;
 	vertical-align:middle;
 	text-align:center;
 	background-color:#77ee77;
+	color:#225522;
 	border-radius:3px;
 	float:left;
 	cursor:pointer;
