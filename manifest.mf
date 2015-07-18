@@ -6,3 +6,6 @@ scripts.js
 styles.css
 index.html
 jquery-1.9.1.min.js
+
+NETWORK:
+*
