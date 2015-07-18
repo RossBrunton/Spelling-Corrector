@@ -10,15 +10,20 @@
 	
 	<body class='yes' onload='sc.generateNextWord();'>
 		<!-- Settings area -->
-		<div class='block settings'>
+		<div class='block settingsBlock'>
 			<div id='settingsClicker'>
 				<a onclick='sc.toggleSettingsDiv();'>&#9998; Settings</a>
 			</div>
 			
-			<div id='mainSettings' style='display:none'>
-				<table id='settingsTable'>
+			<div id='mainSettings'>
+				<div id='settings'>
 					<!-- This table is generated through code -->
-				</table>
+				</div>
+				
+				<div id='addWord'>
+					<input type='text' class='settingsWord' id='addWordField' onkeypress='sc.checkInput(event)'/>
+					<span class='addButton' title='Add Word' onclick='sc.addWordFromInput();'>+</span>
+				</div>
 			</div>
 		</div>
 		

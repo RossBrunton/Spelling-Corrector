@@ -92,37 +92,21 @@ sc.updateSettingsArea = function() {
 	sc.saveWords();
 	
 	//Clear the settings table
-	$("#settingsTable").html("");
+	$("#settings").html("");
 	
-	var hold = "<tr>"
+	var hold = ""
 	
 	//Loop through every word, adding them to the string
-	for(var i = 0; i < sc.wordList.length; i += 5) {
-		if(i) hold += "</tr><tr>";
-		
-		for(var j = i; j < i + 5; j ++) {
-			if(j < sc.wordList.length) {
-				hold += "<td>\
-					<div class='deleteButton' title='Delete Word' onclick='sc.deleteWord("+j+");'>X</div>\
-					<div class='settingsWord'>"+sc.wordList[j]+"</div>\
-				</td>";
-			}else{
-				//Add a blank table cell so that there is always 5 cols
-				hold += "<td>&nbsp;</td>";
-			}
-		}
+	for(var i = 0; i < sc.wordList.length; i ++) {
+		hold += "<span>\
+			<span class='deleteButton' title='Delete Word' onclick='sc.deleteWord("+i+");'>X</span>\
+			<span class='settingsWord'>"+sc.wordList[i]+"</span>\
+		</span>";
 	}
-	
-	//And add the "add word" thing
-	hold += "</tr><tr>";
-	hold += "<td colspan='3'>\
-		<input type='text' class='settingsWord' id='addWordField' onkeypress='sc.checkInput(event)'/>\
-		<div class='addButton' title='Add Word' onclick='sc.addWordFromInput();'>+</div>";
-	hold += "</td></tr>";
 	
 	sc.saveWords();
 	
-	$("#settingsTable").html(hold);
+	$("#settings").html(hold);
 };
 
 /** Called when the "settings" button is pressed. Shows or hides the settings area. */

@@ -80,9 +80,28 @@ body.no {
 }
 
 /* The settings table */
-#settingsTable {
-	width:100%;
-	table-layout: fixed;
+#mainSettings {
+	display:none;
+}
+
+#settings {
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#settings > span {
+	white-space:nowrap;
+	padding-left:10px;
+	padding-right:10px;
+	width:150px;
+}
+
+#settings span {
+	white-space:nowrap;
 }
 
 /* The delete button */
@@ -111,7 +130,7 @@ body.no {
 	background-color:#77ee77;
 	color:#225522;
 	border-radius:3px;
-	float:left;
+	display:inline-block;
 	cursor:pointer;
 	font-family: sans-serif;
 }
@@ -154,6 +173,8 @@ input.no {
 #addWordField {
 	border:1px solid #009900;
 	color:#005500;
+	margin-top:2px;
+	margin-right:5px;
 }
 
 /* Links should have pointy hands */
