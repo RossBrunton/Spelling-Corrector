@@ -80,6 +80,10 @@ sc.checkWord = function() {
 	if(value.toLowerCase() == sc.currentWord.toLowerCase()) {
 		sc.generateNextWord();
 	}
+	
+	if(!value.toLowerCase()) {
+		$("#wordOrigin").slideDown();
+	}
 };
 
 /** Updates the setting area; should be called when a word is added or removed. */
